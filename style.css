@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box; /*keeps element padding inside*/
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -30,23 +31,36 @@ h3 {
   line-height: 150%;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav svg{
+nav svg {
   cursor: pointer;
 }
 
 .links {
   position: absolute;
-  background: white;
+  background: rgba(222, 222, 222);
   width: 100%;
   height: 100vh;
   left: 0;
-  top
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
+}
+.links a {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  text-decoration: none;
+}
+.links a:hover {
+  color: var(--pink);
 }
 
 .logo {
@@ -79,7 +93,7 @@ nav svg{
 .selling-point h3 {
   font-family: "Manrope", sans-serif;
 }
-.ctas{
+.ctas {
   margin-top: 2rem;
 }
 .ctas button {
@@ -100,7 +114,7 @@ nav svg{
   color: rgba(222, 222, 222);
 }
 
-.hero{
+.hero {
   position: absolute;
   left: 0;
   top: 0;
@@ -110,23 +124,25 @@ nav svg{
   z-index: -1;
 }
 
-.classes{
+.classes {
   color: var(--secondary-color);
   text-align: center;
   font-family: "ahganirya", sans-serif;
 }
-.videos video{
+.videos video {
   width: 100%;
   border-radius: 1rem;
   margin-top: 1rem;
 }
-.meditation, .yoga, .strength{
+.meditation,
+.yoga,
+.strength {
   position: relative;
 }
-.videos h3{
+.videos h3 {
   position: absolute;
-  color: var(--green);
-  text-shadow: 0px 2px 12px rgba(0,0,0,0.4);
+  color: var(--pink);
+  text-shadow: 0px 3px 24px rgba(0, 0, 0, 0.4);
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
@@ -134,19 +150,19 @@ nav svg{
   line-height: 220%;
 }
 
-.about{
+.about {
   color: var(--secondary-color);
 }
-.about h2{
+.about h2 {
   font-family: "ahganirya", sans-serif;
   text-align: center;
 }
-.about p{
+.about p {
   line-height: 150%;
   font-family: "Manrope", sans-serif;
   font-size: 1.2rem;
 }
-.about img{
+.about img {
   width: 100%;
   border-radius: 1rem;
   margin-top: 2rem;
