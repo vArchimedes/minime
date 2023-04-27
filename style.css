@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /*keeps element padding inside*/
+  background: rgba(113, 77, 76); /*rgb(138, 116, 140);*/
 }
 
 :root {
@@ -56,7 +57,7 @@ nav svg{
 }
 .front-page {
   min-height: 100vh;
-  background: rgba(145, 119, 114);
+  /*background: rgba(145, 119, 114);*/
   color: rgba(222, 222, 222);
   position: relative;
   z-index: 1;
