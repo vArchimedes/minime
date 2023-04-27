@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*keeps element padding inside*/
+  background: rgba(145, 119, 114);
+}
+
+:root{
+  --main-color: #f8b281;
+  --secondary-color: #1b1b1b;
+}
+
+@font-face{
+  font-family:""
+}
