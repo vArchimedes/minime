@@ -7,11 +7,16 @@ body {
 }
 
 :root {
-  --main-color: #f8b281;
-  --secondary-color: #1b1b1b;
+  --offblack: rgba(27, 27, 27);
   --blue: rgba(155, 213, 223);
   --pink: rgba(210, 157, 193);
   --green: rgba(191, 219, 188);
+  --brown: rgba(113, 77, 76);
+  --offwhite: rgba(222, 222, 222);
+  
+  --orange: #f8b281;
+  --purple: rgba(138, 116, 140);
+  --beige: rgba(145, 119, 114);
 }
 
 @font-face {
@@ -43,7 +48,7 @@ nav svg {
 
 .links {
   position: absolute;
-  background: rgba(222, 222, 222);
+  background: var(--offwhite);
   width: 100%;
   height: 100vh;
   left: 0;
@@ -55,7 +60,7 @@ nav svg {
   transform: translateX(100%);
 }
 .links a {
-  color: var(--secondary-color);
+  color: var(--offblack);
   font-size: 2rem;
   text-decoration: none;
 }
@@ -77,10 +82,8 @@ nav svg {
 }
 .front-page {
   min-height: 100vh;
-  /*light purple rgba(138, 116, 140);*/
-  /*original beige rgba(145, 119, 114);*/
-  background: rgba(113, 77, 76);
-  color: rgba(222, 222, 222);
+  background: var(--brown);
+  color: var(--offwhite);
   position: relative;
   z-index: 1;
 }
@@ -107,11 +110,11 @@ nav svg {
 }
 .cta-main {
   background-color: var(--pink);
-  color: var(--secondary-color);
+  color: var(--offblack);
 }
 .cta-sec {
-  background-color: var(--secondary-color);
-  color: rgba(222, 222, 222);
+  background-color: var(--offblack);
+  color: var(--offwhite);
 }
 
 .hero {
@@ -125,7 +128,8 @@ nav svg {
 }
 
 .classes {
-  color: var(--secondary-color);
+  background: var(--offwhite);
+  color: var(--offblack);
   text-align: center;
   font-family: "ahganirya", sans-serif;
 }
@@ -141,7 +145,7 @@ nav svg {
 }
 .videos h3 {
   position: absolute;
-  color: var(--pink);
+  color: var(--green);
   text-shadow: 0px 3px 24px rgba(0, 0, 0, 0.4);
   bottom: 10%;
   left: 50%;
@@ -151,7 +155,8 @@ nav svg {
 }
 
 .about {
-  color: var(--secondary-color);
+  background: var(--brown);
+  color: var(--offwhite);
 }
 .about h2 {
   font-family: "ahganirya", sans-serif;
