@@ -19,6 +19,10 @@ h2{
   line-height: 125%;
   padding: 1rem 0rem;
 }
+h3{
+  font-size: 1.25rem;
+  line-height: 125%;
+}
 .links{
   display: none;
 }
@@ -32,5 +36,8 @@ h2{
   font-family: "ahganirya", sans-serif;
 }
 .logo img{
-  width: 2rem;
+  width: 2.5rem;
+}
+.front-page{
+  min-height: 100vh;
 }
