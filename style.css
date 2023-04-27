@@ -11,5 +11,17 @@ body{
 }
 
 @font-face{
-  font-family:""
+  font-family:"rusilla";
+  src: url(https://cdn.glitch.global/69225e86-d061-4cf0-a1b8-2ad0e7b45536/RusillaSerif-2OZpl.otf?v=1682577747147);
+}
+h2{
+  font-size: 2.5rem;
+  line-height: 125%;
+  padding: 1rem 0rem;
+}
+.links{
+  display: none;
+}
+.logo{
+  display: flex;
 }
