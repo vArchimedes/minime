@@ -58,6 +58,8 @@ nav svg{
   min-height: 100vh;
   background: rgba(145, 119, 114);
   color: rgba(222, 222, 222);
+  position: relative;
+  z-index: 1;
 }
 .selling-point {
   margin-top: 25vh;
@@ -86,4 +88,14 @@ nav svg{
 .cta-sec {
   background-color: var(--secondary-color);
   color: rgba(222, 222, 222);
+}
+
+.hero{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
