@@ -11,8 +11,8 @@ body{
 }
 
 @font-face{
-  font-family:"rusilla";
-  src: url(https://cdn.glitch.global/69225e86-d061-4cf0-a1b8-2ad0e7b45536/RusillaSerif-2OZpl.otf?v=1682577747147);
+  font-family: "ahganirya";
+  src: url(https://cdn.glitch.global/69225e86-d061-4cf0-a1b8-2ad0e7b45536/AhganiryaPersonalUse-Yznaj.ttf?v=1682578385324);
 }
 h2{
   font-size: 2.5rem;
@@ -24,4 +24,13 @@ h2{
 }
 .logo{
   display: flex;
+  align-items: center;
+}
+.logo h1{
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-family: "ahganirya", sans-serif;
+}
+.logo img{
+  width: 2rem;
 }
