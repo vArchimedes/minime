@@ -2,7 +2,6 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box; /*keeps element padding inside*/
-  background: rgba(145, 119, 114);
 }
 
 :root{
@@ -14,14 +13,17 @@ body{
   font-family: "ahganirya";
   src: url(https://cdn.glitch.global/69225e86-d061-4cf0-a1b8-2ad0e7b45536/AhganiryaPersonalUse-Yznaj.ttf?v=1682578385324);
 }
+section{
+  padding: 5%;
+}
 h2{
   font-size: 2.5rem;
-  line-height: 125%;
+  line-height: 175%;
   padding: 1rem 0rem;
 }
 h3{
   font-size: 1.25rem;
-  line-height: 125%;
+  line-height: 150%;
 }
 .links{
   display: none;
@@ -36,8 +38,21 @@ h3{
   font-family: "ahganirya", sans-serif;
 }
 .logo img{
-  width: 2.5rem;
+  width: 3rem;
 }
 .front-page{
   min-height: 100vh;
+  background: rgba(145, 119, 114);
+  color: rgba(222, 222, 222 );
+}
+.selling-point{
+  margin-top: 25vh;
+  font-family: "ahganirya", sans-serif;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4)
+}
+.selling-point h3{
+  font-family: sans-serif;
+}
+.cta-main{
+  
 }
