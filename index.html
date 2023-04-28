@@ -141,6 +141,21 @@
 
     <script>
       const burger = document.querySelector("nav svg");
+      const ctasButtons = document.querySelectorAll(".ctas button")
+      
+      ctasButtons.forEach((node) => {
+        node.onmouseenter = (e) => {
+          let myButton = e.currentTarget;
+          if (myButton.classList.contains("cta-sec")){
+            
+          }
+          myButton.classList.toggle("cta-sec-hover");
+        };
+        node.onmouseout = (e) => {
+          let myButton = e.currentTarget;
+          myButton.classList.toggle("cta-sec-hover");");
+        };
+      });
 
       burger.addEventListener("click", () => {
         if (burger.classList.contains("active")) {
