@@ -89,7 +89,7 @@
       </div>
       <div class="videos">
         <div class="meditation">
-          <h3>Meditation</h3>
+          <h3 class="faded">Meditation</h3>
           <video
             muted
             loop
@@ -98,7 +98,7 @@
           ></video>
         </div>
         <div class="yoga">
-          <h3>Hot Yoga</h3>
+          <h3 class="faded">Hot Yoga</h3>
           <video
             muted
             loop
@@ -107,7 +107,7 @@
           ></video>
         </div>
         <div class="strength">
-          <h3>Strength Training</h3>
+          <h3 class="faded">Strength Training</h3>
           <video
             muted
             loop
@@ -120,7 +120,7 @@
     <section class="about">
       <div class="our-story">
         <h2>Our Story...</h2>
-        <p>
+        <p class="faded">
           Linda as been practicing the art of yoga for over 10 years. Inspired
           by her teachers, she sought to move mountains with a compassionate
           heart through spreading this art to others in this world. With a
@@ -165,7 +165,7 @@
       burger.addEventListener("click", () => {
         if (burger.classList.contains("active")) {
           gsap.to(".links", { x: "100%" });
-          gsap.set(".links", zIndex("10"));
+
           gsap.to(".line", { stroke: "rgba(222, 222, 222)" });
           gsap.set("body", { overflow: "auto" });
           gsap.set("body", { overflowX: "hidden" });
@@ -198,6 +198,32 @@
           onEnterBack: () => video.play(),
           onLeave: () => video.pause(),
           onLeaveBack: () => video.pause(),
+        });
+      });
+
+      var fadedElements = document.querySelectorAll(".faded");
+
+      fadedElements.forEach((faded) => {
+        var top = faded.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 40) {
+          faded.classList.add("already-on-page");
+        } else {
+          faded.classList.add("not-on-page");
+        }
+      });
+
+      window.addEventListener("scroll", () => {
+        fadedElements.forEach((faded) => {
+          var top = faded.getBoundingClientRect().top;
+          console.log(top, window.innerHeight);
+
+          if (
+            top < window.innerHeight - 40 &&
+            faded.classList.contains("not-on-page")
+          ) {
+            faded.classList.add("fadeindown");
+          }
         });
       });
     </script>

@@ -60,6 +60,7 @@ nav svg {
   align-items: center;
   justify-content: space-evenly;
   transform: translateX(100%);
+  z-index: 9;
 }
 .links a {
   color: var(--offblack);
@@ -224,4 +225,8 @@ nav svg {
   100%{opacity: 1; 
     transform: translateY(0px)
   }
+}
+
+.faded{
+  opacity: 0;
 }
