@@ -181,28 +181,33 @@ nav svg {
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 768px){
-  .classes, .about{
+@media screen and (min-width: 768px) {
+  .classes,
+  .about {
     padding: 10%;
   }
-  .videos{
+  .videos {
     display: flex;
     gap: 2rem;
   }
-  .about{
+  .about {
     display: flex;
     gap: 5rem;
     justify-content: space-between;
   }
-  .about img{
+  .about img {
     width: 50%;
   }
-  .about h2{
+  .about h2 {
     text-align: start;
   }
 }
 
-.hover-active{
+.cta-sec-hover {
   background-color: var(--offwhite);
+  color: var(--offblack);
+}
+.cta-main-hover {
+  background-color: var(--green);
   color: var(--offblack);
 }

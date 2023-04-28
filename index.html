@@ -141,19 +141,24 @@
 
     <script>
       const burger = document.querySelector("nav svg");
-      const ctasButtons = document.querySelectorAll(".ctas button")
-      
+      const ctasButtons = document.querySelectorAll(".ctas button");
+
       ctasButtons.forEach((node) => {
         node.onmouseenter = (e) => {
           let myButton = e.currentTarget;
-          if (myButton.classList.contains("cta-sec")){
-            
+          if (myButton.classList.contains("cta-sec")) {
+            myButton.classList.toggle("cta-sec-hover");
+          } else {
+            myButton.classList.toggle("cta-main-hover");
           }
-          myButton.classList.toggle("cta-sec-hover");
         };
         node.onmouseout = (e) => {
           let myButton = e.currentTarget;
-          myButton.classList.toggle("cta-sec-hover");");
+          if (myButton.classList.contains("cta-sec")) {
+            myButton.classList.toggle("cta-sec-hover");
+          } else {
+            myButton.classList.toggle("cta-main-hover");
+          }
         };
       });
 
@@ -194,6 +199,20 @@
           onLeaveBack: () => video.pause(),
         });
       });
+      
+      const titles = gsap.utils.toArray(".classes h3");
+      titles.forEach((title) => {
+        ScrollTrigger.create({
+          trigger: title,
+          start: "top center",
+          end: "bottom center",
+          markers: false,
+          onEnter: () => {
+            gsap.to(title, { opacity: 1 });
+          },
+        });
+      });
+      
     </script>
   </body>
 </html>
