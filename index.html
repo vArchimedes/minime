@@ -162,6 +162,9 @@
         };
       });
 
+      gsap.from(".selling-point h3", { opacity: 0, duration: 1.5, y: -10 });
+      
+      
       burger.addEventListener("click", () => {
         if (burger.classList.contains("active")) {
           gsap.to(".links", { x: "100%" });
@@ -199,9 +202,6 @@
           onLeaveBack: () => video.pause(),
         });
       });
-
-      
-      gsap.from(".classes h3", { opacity: 0, duration: 1.5, y: 30 });
     </script>
   </body>
 </html>
