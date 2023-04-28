@@ -44,6 +44,7 @@ nav {
 
 nav svg {
   cursor: pointer;
+  z-index: 10;
 }
 
 .links {
@@ -80,6 +81,7 @@ nav svg {
 .logo img {
   width: 3rem;
 }
+
 .front-page {
   min-height: 100vh;
   background: var(--brown);
@@ -96,6 +98,7 @@ nav svg {
 .selling-point h3 {
   font-family: "Manrope", sans-serif;
 }
+
 .ctas {
   margin-top: 2rem;
 }

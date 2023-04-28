@@ -124,8 +124,25 @@
       />
     </section>
 
+    <!-- JS begins here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="/script.js"></script>
+
+    <script>
+      const burger = document.querySelector("nav svg");
+
+      burger.addEventListener("click", () => {
+        if (burger.classList.contains("active")) {
+          gsap.to(".links", { x: "100%" });
+          gsap.to(".line", { stroke: "rgba(222, 222, 222)" });
+        } else {
+          gsap.to(".links", { x: "0%" });
+          gsap.to(".line", { stroke: "rgba(27, 27, 27)" });
+          gsap.FromTo(".links a", {opacity: 0}, {});
+        }
+        burger.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
