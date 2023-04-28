@@ -17,11 +17,13 @@
   </head>
   <body>
     <section class="front-page">
+      <!--
       <img
         class="hero"
         src="https://cdn.glitch.global/69225e86-d061-4cf0-a1b8-2ad0e7b45536/meditating2.jpg?v=1682582970048"
         alt="meditating"
       />
+-->
       <nav>
         <div class="logo">
           <img
@@ -89,6 +91,7 @@
         <div class="meditation">
           <h3>Meditation</h3>
           <video
+            class="video"
             src="https://cdn.glitch.global/69225e86-d061-4cf0-a1b8-2ad0e7b45536/meditation.mp4?v=1682584141683"
           ></video>
         </div>
@@ -149,6 +152,9 @@
         }
         burger.classList.toggle("active");
       });
+      
+      const videos = gsap.utils.toArray(".video");
+      gsap.set(".videos", {opacity: 0});
     </script>
   </body>
 </html>

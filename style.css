@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box; /*keeps element padding inside*/
   font-family: "Manrope", sans-serif;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -88,6 +89,9 @@ nav svg {
   color: var(--offwhite);
   position: relative;
   z-index: 1;
+  background-image: url("https://cdn.glitch.global/69225e86-d061-4cf0-a1b8-2ad0e7b45536/meditating2.jpg?v=1682582970048");
+  background-position: center;
+  background-size: cover;
 }
 .selling-point {
   margin-top: 25vh;
@@ -149,7 +153,7 @@ nav svg {
 .videos h3 {
   position: absolute;
   color: var(--green);
-  text-shadow: 0px 3px 24px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
