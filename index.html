@@ -72,7 +72,7 @@
       </nav>
       <div class="selling-point">
         <h2>Find your inner self.</h2>
-        <h3>
+        <h3 class="fadeindown">
           Try meditation, hot yoga, and strength-training classes tailored to
           fit your personal lifestyle.
         </h3>
@@ -162,12 +162,10 @@
         };
       });
 
-      gsap.from(".selling-point h3", { opacity: 0, duration: 1.5, y: -10 });
-      
-      
       burger.addEventListener("click", () => {
         if (burger.classList.contains("active")) {
           gsap.to(".links", { x: "100%" });
+          gsap.set(".links", zIndex("10"));
           gsap.to(".line", { stroke: "rgba(222, 222, 222)" });
           gsap.set("body", { overflow: "auto" });
           gsap.set("body", { overflowX: "hidden" });

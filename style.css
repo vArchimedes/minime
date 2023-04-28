@@ -101,6 +101,7 @@ nav svg {
 }
 .selling-point h3 {
   font-family: "Manrope", sans-serif;
+  z-index: 1;
 }
 
 .ctas {
@@ -211,4 +212,16 @@ nav svg {
 .cta-main-hover {
   background-color: var(--green);
   color: var(--offblack);
+}
+
+.fadeindown{
+  animation: fadeindown 1.5s both;
+}
+@keyframes fadeindown{
+  0%{opacity: 0; 
+    transform: translateY(-10px)
+  }
+  100%{opacity: 1; 
+    transform: translateY(0px)
+  }
 }
