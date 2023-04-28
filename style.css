@@ -13,8 +13,8 @@ body {
   --green: rgba(191, 219, 188);
   --brown: rgba(113, 77, 76);
   --offwhite: rgba(222, 222, 222);
-  
-  --orange: #f8b281;
+
+  --orange: rgba(248, 178, 129);
   --purple: rgba(138, 116, 140);
   --beige: rgba(145, 119, 114);
 }
