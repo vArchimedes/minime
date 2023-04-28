@@ -199,20 +199,9 @@
           onLeaveBack: () => video.pause(),
         });
       });
+
       
-      const titles = gsap.utils.toArray(".classes h3");
-      titles.forEach((title) => {
-        ScrollTrigger.create({
-          trigger: title,
-          start: "top center",
-          end: "bottom center",
-          markers: false,
-          onEnter: () => {
-            gsap.to(title, { opacity: 1 });
-          },
-        });
-      });
-      
+      gsap.from(".classes h3", { opacity: 0, duration: 1.5, y: 30 });
     </script>
   </body>
 </html>
