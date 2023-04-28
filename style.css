@@ -119,7 +119,7 @@ nav svg {
   cursor: pointer;
 }
 .cta-main {
-  background-color: var(--pink);
+  background-color: var(--offwhite);
   color: var(--offblack);
 }
 .cta-sec {
@@ -156,8 +156,8 @@ nav svg {
 }
 .videos h3 {
   position: absolute;
-  color: var(--green);
-  text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+  color: var(--pink);
+  text-shadow: 0px 2px 12px rgba(222,222,222, 0.4);
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
@@ -211,8 +211,8 @@ nav svg {
   color: var(--offblack);
 }
 .cta-main-hover {
-  background-color: var(--green);
-  color: var(--offblack);
+  background-color: var(--brown);
+  color: var(--offwhite);
 }
 
 .fadeindown{
@@ -227,6 +227,23 @@ nav svg {
   }
 }
 
-.faded{
+.fadeinup{
+  animation: fadeinup 1.5s both;
+}
+@keyframes fadeinup{
+  0%{opacity: 0; 
+    transform: translateY(10px)
+  }
+  100%{opacity: 1; 
+    transform: translateY(0px)
+  }
+}
+
+.already-on-page{
+  opacity: 1; 
+  transform: translateY(0px)
+}
+.not-on-page{
   opacity: 0;
+  transform: translateY(10px);
 }
