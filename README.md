@@ -1,4 +1,4 @@
-# Minimalist Yoga Website
+# Minime: Minimalist Yoga Website
 
 ## Reference:
 
